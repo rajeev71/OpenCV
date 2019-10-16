@@ -8,7 +8,7 @@ def  nothing(x):
 
 # Create a black image and window
 
-img = np.zeros((300,512,3), np.uint8)
+img = np.zeros((300, 512, 3), np.uint8)
 cv.namedWindow('image')
 
 cv.createTrackbar('B', 'image', 0, 255, nothing)
@@ -34,5 +34,6 @@ while 1:
         img[:] = 0
     else:
         img[:] = [b, g, r]
+
 
 cv.destroyAllWindows()

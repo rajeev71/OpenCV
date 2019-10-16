@@ -13,11 +13,6 @@ def click(event, x, y, flags, param):
         cv2.imshow('Image', img)
 
 
-
-
-
-
-
 img = np.zeros((512, 512, 3), np.uint8)
 cv2.imshow('Image', img)
 points = []
